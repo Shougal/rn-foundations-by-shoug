@@ -13,7 +13,7 @@ export const style = StyleSheet.create({
     textAlign: "center",
     fontWeight: "bold",
     fontSize: fontSize.m,
-    color: "blue",
+    color: "#343434",
     //TODO: font family
     marginBottom: 8,
   },
