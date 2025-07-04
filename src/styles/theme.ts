@@ -42,7 +42,7 @@ export const fontFamily = {
 export const pageStyle = StyleSheet.create({
   pageContainer: {
     flex: 1,
-    backgroundColor: "brown",
+    backgroundColor: "#fff",
   },
   scrollContent: {
     paddingHorizontal: 16,
