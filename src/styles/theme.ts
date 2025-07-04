@@ -1,4 +1,5 @@
 import { Platform } from "react-native";
+import { StyleSheet } from "react-native";
 
 export const cornerRadius = {
   xs: 4,
@@ -37,3 +38,12 @@ export const fontFamily = {
     android: "InconsolataRegular",
   }),
 } as const;
+
+export const pageStyle = StyleSheet.create({
+  pageContainer: {
+    flex: 1,
+    paddingHorizontal: 16,
+    gap: 8,
+    backgroundColor: "brown",
+  },
+});
