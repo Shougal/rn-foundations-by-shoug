@@ -4,4 +4,5 @@ export type VariantType = (typeof LIST_VARIANTS)[number];
 export interface ListProps {
   variant: VariantType;
   items: string[];
+  title?: string;
 }
