@@ -12,7 +12,7 @@ export const ProjectSetup = () => {
       <ScrollView style={pageStyle.scrollContent}>
         <View style={pageStyle.sectionStack}>
           {/* Section 1: Page header and brief description */}
-          <Section title="Project Setup">
+          <Section title="Project Setup & Best Practices">
             <Note
               variant="info"
               content="This chapter covers the essential initial steps to configure a scalable, maintainable React Native project using best practices."
@@ -111,6 +111,103 @@ export const ProjectSetup = () => {
                 );
               }}
               linkLabel="Android Emulator Guide"
+            />
+          </Section>
+
+          {/* Section 5: File structure and jsModules */}
+          <Section title="1.4 File & Folder Structure">
+            <Note
+              variant="info"
+              content="Follow a modular structure with index-based exports for better maintainability."
+            />
+            <List
+              variant="unordered"
+              items={[
+                "Each component has its own folder with `index.tsx`, `style.ts`, `type.ts`.",
+                "Use barrel export (`index.tsx`) to allow clean imports.",
+              ]}
+            />
+            <CodeBlock
+              code={`// Example: src/components/MyButton/index.tsx
+
+export default MyButton;
+
+// Usage
+import MyButton from './components/MyButton';`}
+            />
+          </Section>
+
+          {/* Section 6:  Default vs named exports */}
+          <Section title="1.5 Default vs Named Exports">
+            <Note
+              variant="info"
+              content="Use default export for components, and named exports for utility functions or types."
+            />
+            <CodeBlock
+              code={`// Default export
+const MyComponent = () => { ... };
+export default MyComponent;
+
+// Named export
+export const formatDate = (date: string) => { ... };`}
+            />
+          </Section>
+
+          {/* Section 7: Common JS vs ESM */}
+          <Section title="1.6 CommonJS vs ESM">
+            <Note
+              variant="info"
+              content="React Native uses CommonJS under the hood (via Metro), but you always write your code using modern ESM syntax in typescript."
+            />
+            <List
+              variant="unordered"
+              items={[
+                "CommonJS: `require`, `module.exports` (legacy Node.js)",
+                "ESM: `import`, `export` (modern, used in RN + TS)",
+              ]}
+            />
+            <CodeBlock
+              code={`// CommonJS
+const express = require('express');
+
+// ESM
+import express from 'express';`}
+            />
+          </Section>
+
+          {/* Section 8: Linking fonts: */}
+          <Section title="1.7 Linking Fonts">
+            <Note
+              variant="info"
+              content="To use custom fonts, add them to assets and configure linking."
+            />
+            <List
+              variant="ordered"
+              items={[
+                "Place fonts under `assets/fonts/`",
+                "Add to `react-native.config.js`",
+                "Run `npx react-native link`",
+              ]}
+            />
+            <CodeBlock
+              code={`// react-native.config.js
+module.exports = {
+  assets: ['./assets/fonts'],
+};`}
+            />
+            <Note
+              variant="warning"
+              content="Android doesn't handle font file names with dashes, spaces, or special characters well. Rename your font files to remove dashes (e.g., use `PoppinsBold.ttf` instead of `Poppins-Bold.ttf`) or ensure you reference the internal font name exactly in your styles."
+            />
+            <CodeBlock
+              code={`// Example usage in style
+text: {
+  fontFamily: 'Poppins-Bold',
+},`}
+            />
+            <Note
+              variant="success"
+              content="After linking and reloading, your custom fonts should be usable across the app. Always test on both iOS and Android."
             />
           </Section>
         </View>
