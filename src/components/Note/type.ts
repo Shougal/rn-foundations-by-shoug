@@ -1,4 +1,4 @@
-export type VariantType = "info";
+export type VariantType = "info" | "warning" | "success";
 
 export interface NoteProps {
   variant: VariantType;
