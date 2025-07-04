@@ -42,8 +42,15 @@ export const fontFamily = {
 export const pageStyle = StyleSheet.create({
   pageContainer: {
     flex: 1,
-    paddingHorizontal: 16,
-    gap: 8,
     backgroundColor: "brown",
+  },
+  scrollContent: {
+    paddingHorizontal: 16,
+    paddingVertical: 24,
+  },
+  sectionStack: {
+    display: "flex",
+    flexDirection: "column",
+    gap: 16, // space between sections
   },
 });
