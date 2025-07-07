@@ -5,8 +5,7 @@ import { padding, cornerRadius, fontSize } from "../../styles/theme";
 export const style = StyleSheet.create({
   container: {
     padding: padding.m,
-    backgroundColor: "#f0f0f0",
-    borderRadius: cornerRadius.m,
+    borderRadius: cornerRadius.l,
     flexShrink: 1,
   },
   header: {
