@@ -7,7 +7,10 @@ import { ProjectSetup } from "../screens/project-setup";
 import { ReactBasicsScreen } from "../screens/react-basics";
 import { UITreeScreen } from "../screens/uit";
 import { HomeScreen } from "../screens/home";
-
+import { EventHandlersScreen } from "../screens/event-handler";
+import { StateAndMemoryScreen } from "../screens/state-memory";
+import { StateIsolationScreen } from "../screens/state-isolation";
+import { StateAsSnapshotScreen } from "../screens/state-snapshot";
 const Tab = createBottomTabNavigator();
 
 export const BottomTabNavigator = () => {
@@ -24,6 +27,13 @@ export const BottomTabNavigator = () => {
         component={FunctionalProgrammingScreen}
       />
       <Tab.Screen name="UI Tree" component={UITreeScreen} />
+      <Tab.Screen name="Event Handlers" component={EventHandlersScreen} />
+      <Tab.Screen name="State and Memory" component={StateAndMemoryScreen} />
+      <Tab.Screen name="State Isolation" component={StateIsolationScreen} />
+      <Tab.Screen
+        name="State as a SnapShot"
+        component={StateAsSnapshotScreen}
+      />
     </Tab.Navigator>
   );
 };
