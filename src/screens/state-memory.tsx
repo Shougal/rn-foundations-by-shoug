@@ -44,7 +44,7 @@ const [count, setCount] = useState(0);`}
       <Button title="Add" onPress={() => setCount(count + 1)} />
     </>
   );
-}`}
+} `}
         />
       </Section>
 

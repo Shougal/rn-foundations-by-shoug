@@ -15,7 +15,17 @@ const Tab = createBottomTabNavigator();
 
 export const BottomTabNavigator = () => {
   return (
-    <Tab.Navigator>
+    <Tab.Navigator
+      screenOptions={{
+        headerStyle: {
+          backgroundColor: "#DBDAEE",
+        },
+        headerTitleAlign: "center",
+        headerTitleStyle: {
+          fontWeight: "bold",
+        },
+      }}
+    >
       <Tab.Screen name="Home" component={HomeScreen}></Tab.Screen>
       <Tab.Screen name="Project Setup" component={ProjectSetup} />
       <Tab.Screen name="ESLint" component={ESLintScreen} />
