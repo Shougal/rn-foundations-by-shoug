@@ -13,6 +13,7 @@ import { StateIsolationScreen } from "../screens/state-isolation";
 import { StateAsSnapshotScreen } from "../screens/state-snapshot";
 import { UseEffectScreen } from "../screens/use-effect";
 import { GenericsScreen } from "../screens/generics";
+import { UseMemoScreen } from "../screens/use-memo";
 const Tab = createBottomTabNavigator();
 
 export const BottomTabNavigator = () => {
@@ -48,6 +49,7 @@ export const BottomTabNavigator = () => {
       />
       <Tab.Screen name="Use Effects" component={UseEffectScreen} />
       <Tab.Screen name="Generics in TS" component={GenericsScreen} />
+      <Tab.Screen name="Use Memo" component={UseMemoScreen} />
     </Tab.Navigator>
   );
 };
