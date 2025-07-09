@@ -11,7 +11,7 @@ export const UseEffectScreen = () => {
   return (
     <ChapterScreenLayout>
       {/* Section 1: What is useEffect */}
-      <Section title="Chapter 5: useEffect and Cleanup">
+      <Section title="Chapter 12: useEffect and Cleanup">
         <Note
           variant="info"
           content="useEffect is a React hook used to run side effects in function components, like data fetching, event listeners, or timers."
