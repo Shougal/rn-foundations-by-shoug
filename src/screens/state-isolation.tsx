@@ -18,7 +18,7 @@ export const StateIsolationScreen = () => {
       </Section>
 
       {/* Section 2: Shallow Array Copy (Only Top-Level) */}
-      <Section title="7.1 Shallow Copy via Array Spread">
+      <Section title="10.1 Shallow Copy via Array Spread">
         <Note
           variant="warning"
           content="Spreading an array creates a new array (different reference), but its objects still point to the same memory locations."
@@ -41,7 +41,7 @@ console.log(originalList[0].seen); // true (mutation happened)`}
       </Section>
 
       {/* Section 3: Deep Object Copy via map + spread */}
-      <Section title="7.2 Full Object Isolation via .map and {...}">
+      <Section title="10.2 Full Object Isolation via .map and {...}">
         <Note
           variant="success"
           content="Use .map + object spread to shallow copy each object inside the array—this creates separate references for each object."
@@ -55,7 +55,7 @@ console.log(originalList[0].seen); // false (isolated update)`}
       </Section>
 
       {/* Section 4: Shared State Bug in React */}
-      <Section title="7.3 Shared State Bug in React Components">
+      <Section title="10.3 Shared State Bug in React Components">
         <Note
           variant="warning"
           content="If two components use the same initial array (e.g., same object reference), changing one will affect the other unless you isolate them."
@@ -69,7 +69,7 @@ const [yourList, setYourList] = useState(initialList);
       </Section>
 
       {/* Section 5: Fix with map for Full Isolation */}
-      <Section title="7.4 Fix: Fully Isolate Initial State with .map">
+      <Section title="10.4 Fix: Fully Isolate Initial State with .map">
         <List
           variant="ordered"
           items={[
@@ -85,7 +85,7 @@ const [yourList, setYourList] = useState(initialList);
       </Section>
 
       {/* Section 6: Immutable State Updates */}
-      <Section title="7.5 Immutable Updates in State">
+      <Section title="10.5 Immutable Updates in State">
         <Note
           variant="info"
           content="When updating arrays in React state, never mutate objects directly. Use map to return new objects."
@@ -98,7 +98,7 @@ const [yourList, setYourList] = useState(initialList);
       </Section>
 
       {/* Section 6.1: Pitfalls with Nested Objects */}
-      <Section title="7.5.1 Nested Object Pitfalls">
+      <Section title="10.5.1 Nested Object Pitfalls">
         <Note
           variant="warning"
           content="Spreading an object with nested properties only copies the outer level. Nested objects still reference the original memory."
@@ -132,7 +132,7 @@ console.log(user.address.city); // "Jeddah" (unexpected!)`}
       </Section>
 
       {/* Section 7: Summary */}
-      <Section title="7.6 Summary">
+      <Section title="10.6 Summary">
         <List
           variant="unordered"
           items={[

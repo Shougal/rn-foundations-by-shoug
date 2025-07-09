@@ -25,7 +25,7 @@ const [count, setCount] = useState(0);`}
       </Section>
 
       {/* Section 2: What Triggers Re-renders */}
-      <Section title="5.1 What Triggers Re-renders">
+      <Section title="9.1 What Triggers Re-renders">
         <List
           variant="unordered"
           items={[
@@ -49,7 +49,7 @@ const [count, setCount] = useState(0);`}
       </Section>
 
       {/* Section 3: Re-render vs Runtime vs Refresh */}
-      <Section title="5.2 Re-render vs Runtime vs Refresh">
+      <Section title="9.2 Re-render vs Runtime vs Refresh">
         <List
           variant="unordered"
           items={[
@@ -65,7 +65,7 @@ const [count, setCount] = useState(0);`}
       </Section>
 
       {/* Section 4: Avoiding Mutation */}
-      <Section title="5.3 Avoiding Direct Mutation">
+      <Section title="9.3 Avoiding Direct Mutation">
         <Note
           variant="warning"
           content="Mutating a state object directly won't trigger a re-render because the reference hasn't changed."
@@ -81,7 +81,7 @@ setUser({ ...user, age: 30 });`}
       </Section>
 
       {/* Section 5: Why React Needs Immutability */}
-      <Section title="5.4 Why React Needs Immutability">
+      <Section title="9.4 Why React Needs Immutability">
         <Note
           variant="info"
           content="React does a shallow comparison to detect changes. If you keep the same object reference, it assumes nothing changed."
@@ -93,7 +93,7 @@ prevState === nextState // true ➜ no re-render`}
       </Section>
 
       {/* Section 6: Summary and Pitfalls */}
-      <Section title="5.5 Summary and Pitfalls">
+      <Section title="9.5 Summary and Pitfalls">
         <List
           variant="unordered"
           items={[

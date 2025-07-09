@@ -18,7 +18,7 @@ export const StateAsSnapshotScreen = () => {
       </Section>
 
       {/* Section 2: Snapshot Explained */}
-      <Section title="8.1 How Snapshot Works">
+      <Section title="11.1 How Snapshot Works">
         <CodeBlock
           code={`const [count, setCount] = useState(0);
 
@@ -35,7 +35,7 @@ function handleClick() {
       </Section>
 
       {/* Section 3: Functional Updates */}
-      <Section title="8.2 Fix with Functional Updates">
+      <Section title="11.2 Fix with Functional Updates">
         <Note
           variant="success"
           content="To update based on the latest value, use the functional form of `setState`."
@@ -56,7 +56,7 @@ function handleClick() {
       </Section>
 
       {/* Section 4: Snapshot Analogy */}
-      <Section title="8.3 Analogy">
+      <Section title="11.3 Analogy">
         <List
           variant="unordered"
           items={[
@@ -68,7 +68,7 @@ function handleClick() {
       </Section>
 
       {/* Section 5: Summary */}
-      <Section title="8.4 Summary">
+      <Section title="11.4 Summary">
         <List
           variant="unordered"
           items={[

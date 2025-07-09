@@ -23,7 +23,7 @@ export const GenericsScreen = () => {
       </Section>
 
       {/* Section 2: Generic Functions */}
-      <Section title="6.1 Defining a Generic Function">
+      <Section title="13.1 Defining a Generic Function">
         <CodeBlock
           code={`function identity<T>(value: T): T {
   return value;
@@ -40,7 +40,7 @@ const b = identity(42); // T is inferred as number`}
       </Section>
 
       {/* Section 3: Why Not Use 'any'? */}
-      <Section title="6.2 Why Generics Are Better than 'any'">
+      <Section title="13.2 Why Generics Are Better than 'any'">
         <List
           variant="unordered"
           items={[
@@ -65,7 +65,7 @@ const b = logGeneric("text"); // T is string, TypeScript knows this`}
       </Section>
 
       {/* Section 4: Constraining Generics */}
-      <Section title="6.3 Constraining Generics with 'extends'">
+      <Section title="13.3 Constraining Generics with 'extends'">
         <Note
           variant="info"
           content="You can restrict what types a generic can be by using extends."
@@ -89,7 +89,7 @@ getProperty(user, "email"); // Error: 'email' is not a key`}
       </Section>
 
       {/* Section 5: Generic Arrow Functions & Default Types */}
-      <Section title="6.4 Arrow Functions & Default Type Parameters">
+      <Section title="13.4 Arrow Functions & Default Type Parameters">
         <CodeBlock
           code={`const wrapInArray = <T>(value: T): T[] => [value];
 
@@ -105,7 +105,7 @@ function greet<T = string>(name?: T): T {
       </Section>
 
       {/* Section 6: Summary of When to Use Generics */}
-      <Section title="6.5 When to Use Generics">
+      <Section title="13.5 When to Use Generics">
         <List
           variant="unordered"
           items={[

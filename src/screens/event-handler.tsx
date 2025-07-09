@@ -22,7 +22,7 @@ export const EventHandlersScreen = () => {
       </Section>
 
       {/* Section 2: Passing vs Calling */}
-      <Section title="3.1 Passing vs Calling">
+      <Section title="8.1 Passing vs Calling">
         <Note
           variant="warning"
           content="Don't call the handler directly—pass a reference to the function instead."
@@ -33,7 +33,7 @@ export const EventHandlersScreen = () => {
       </Section>
 
       {/* Section 3: Inline Arrow Functions */}
-      <Section title="3.2 Inline Arrow Functions">
+      <Section title="8.2 Inline Arrow Functions">
         <Note
           variant="info"
           content="Inline arrow functions are useful when you need to pass arguments or call multiple functions. Avoid excessive inline functions in large lists."
@@ -44,7 +44,7 @@ export const EventHandlersScreen = () => {
       </Section>
 
       {/* Section 4: The Event Object */}
-      <Section title="3.3 The Event Object">
+      <Section title="8.3 The Event Object">
         <Note
           variant="info"
           content="React provides a synthetic event object as an argument to event handlers."
@@ -62,7 +62,7 @@ export const EventHandlersScreen = () => {
       </Section>
 
       {/* Section 5: Common Gotchas */}
-      <Section title="3.4 Common Gotchas">
+      <Section title="8.4 Common Gotchas">
         <List
           variant="unordered"
           items={[

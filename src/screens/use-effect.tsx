@@ -23,7 +23,7 @@ export const UseEffectScreen = () => {
       </Section>
 
       {/* Section 2: Mount, Update, and Unmount */}
-      <Section title="5.1 Component Lifecycle in useEffect">
+      <Section title="12.1 Component Lifecycle in useEffect">
         <List
           variant="unordered"
           items={[
@@ -40,7 +40,7 @@ export const UseEffectScreen = () => {
 
       {/* Section 3: Global Side Effects and Cleanup */}
 
-      <Section title="5.2 Global Side Effects (e.g., window, setInterval)">
+      <Section title="12.2 Global Side Effects (e.g., window, setInterval)">
         <Note
           variant="info"
           content="When you attach global listeners (like window resize) or create intervals, you must remove them manually to prevent memory leaks and unexpected behavior."
@@ -62,7 +62,7 @@ export const UseEffectScreen = () => {
       </Section>
 
       {/* Section 4: Memory and Garbage Collection */}
-      <Section title="5.3 Memory and Garbage Collection">
+      <Section title="12.3 Memory and Garbage Collection">
         <Note
           variant="info"
           content="JavaScript automatically frees memory for objects no longer in use, but only if there are no active references to them."
@@ -78,7 +78,7 @@ window.addEventListener("scroll", someHandler);`}
       </Section>
 
       {/* Section 5: Performance Risks */}
-      <Section title="5.4 Performance and Bug Risks">
+      <Section title="12.4 Performance and Bug Risks">
         <List
           variant="unordered"
           items={[
@@ -94,7 +94,7 @@ window.addEventListener("scroll", someHandler);`}
       </Section>
 
       {/* Section 6: Best Practices */}
-      <Section title="5.5 Best Practices for useEffect Cleanup">
+      <Section title="12.5 Best Practices for useEffect Cleanup">
         <List
           variant="ordered"
           items={[
