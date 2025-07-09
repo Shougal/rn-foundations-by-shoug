@@ -1,4 +1,3 @@
-// components/ChapterScreenLayout.tsx
 import React from "react";
 import { SafeAreaView, ScrollView, View } from "react-native";
 import LinearGradient from "react-native-linear-gradient";
