@@ -5,7 +5,6 @@ import { padding, cornerRadius, fontSize } from "../../styles/theme";
 export const style = StyleSheet.create({
   container: {
     padding: padding.m,
-    borderRadius: cornerRadius.l,
     flexShrink: 1,
   },
   header: {
@@ -15,5 +14,9 @@ export const style = StyleSheet.create({
     color: "#343434",
     //TODO: font family
     marginBottom: 8,
+  },
+  // currently gradient container for sections
+  gradientContainer: {
+    borderRadius: cornerRadius.m,
   },
 });
