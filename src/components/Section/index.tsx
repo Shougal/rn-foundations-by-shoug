@@ -11,15 +11,12 @@ export const Section = ({ title, children }: SectionProps) => {
       locations={[0.42, 1]}
       start={{ x: 0, y: 0 }}
       end={{ x: 1, y: 0 }}
+      style={style.gradientContainer}
     >
       <View style={style.container}>
         <Text style={style.header}>{title}</Text>
         {children}
       </View>
     </LinearGradient>
-    // <View style={style.container}>
-    //   <Text style={style.header}>{title}</Text>
-    //   {children}
-    // </View>
   );
 };
