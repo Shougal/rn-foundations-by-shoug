@@ -11,6 +11,7 @@ import { EventHandlersScreen } from "../screens/event-handler";
 import { StateAndMemoryScreen } from "../screens/state-memory";
 import { StateIsolationScreen } from "../screens/state-isolation";
 import { StateAsSnapshotScreen } from "../screens/state-snapshot";
+import { UseEffectScreen } from "../screens/use-effect";
 const Tab = createBottomTabNavigator();
 
 export const BottomTabNavigator = () => {
@@ -44,6 +45,7 @@ export const BottomTabNavigator = () => {
         name="State as a SnapShot"
         component={StateAsSnapshotScreen}
       />
+      <Tab.Screen name="Use Effects" component={UseEffectScreen} />
     </Tab.Navigator>
   );
 };
