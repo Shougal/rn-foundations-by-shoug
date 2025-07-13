@@ -1,101 +1,159 @@
-<<<<<<< HEAD
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+### `README.md`
 
-# Getting Started
+```md
+# RN Foundations by Shoug
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+[![React Native](https://img.shields.io/badge/React%20Native-2025-blue.svg?logo=react)](https://reactnative.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-4.x-blue.svg?logo=typescript)](https://www.typescriptlang.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](#license)
+[![Status](https://img.shields.io/badge/status-active-brightgreen)](#)
 
-## Step 1: Start Metro
+> A foundational React Native learning app focused on mastering components, props, state, functional programming, UI behavior, and clean architecture.  
+> Built by [@shougalharbi](https://github.com/shougalharbi) to reinforce React Native best practices.
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+---
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+## Table of Contents
 
-```sh
-# Using npm
-npm start
+- [Features](#-features)
+- [Folder Structure](#-folder-structure)
+- [Tech Stack](#️-tech-stack)
+- [Getting Started](#-getting-started)
+- [Development Notes](#-development-notes)
+- [Learning Screens](#-learning-screens)
+- [Feedback](#-feedback)
+- [License](#-license)
 
-# OR using Yarn
-yarn start
+---
+
+## Features
+
+- Modular and reusable components
+- Interactive screens for JSX, props, state, hooks, functional programming
+- Explanations of concepts like `useMemo`, state isolation, controlled inputs
+- Theming and consistent layout system
+- ESLint + Prettier + Husky Git hooks
+- Code blocks, notes, and inline documentation patterns
+
+---
+
+## Folder Structure
 ```
 
-## Step 2: Build and run your app
+src/
+├── components/ # Reusable UI components
+│ ├── CodeBlock/
+│ ├── Link/
+│ ├── List/
+│ ├── Note/
+│ ├── ScreenLayout/
+│ └── Section/
+├── navigation/ # Navigation configuration (if added)
+├── screens/ # Learning modules as screens
+│ ├── eslint-setup.tsx
+│ ├── event-handler.tsx
+│ ├── functional-prog.tsx
+│ ├── generics.tsx
+│ ├── home.tsx
+│ ├── husky-setup.tsx
+│ ├── prettier-setup.tsx
+│ ├── project-setup.tsx
+│ ├── react-basics.tsx
+│ ├── state-isolation.tsx
+│ ├── state-memory.tsx
+│ ├── state-snapshot.tsx
+│ ├── uit.tsx
+│ ├── use-effect.tsx
+│ └── use-memo.tsx
+├── styles/ # Theme, colors, spacing
+├── App.tsx
+└── README.md
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+````
 
-### Android
+---
 
-```sh
-# Using npm
-npm run android
+## 🛠️ Tech Stack
 
-# OR using Yarn
-yarn android
+- React Native (CLI)
+- TypeScript
+- ESLint + Prettier
+- Husky (pre-commit hooks)
+- Custom components and themes
+
+---
+
+## Getting Started
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/shougalharbi/rn-foundations-by-shoug.git
+cd rn-foundations-by-shoug
+````
+
+### 2. Install dependencies
+
+```bash
+npm install
 ```
 
-### iOS
+### 3. iOS Setup
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
-
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
-
-```sh
-bundle install
+```bash
+npx pod-install
+npx react-native run-ios
 ```
 
-Then, and every time you update your native dependencies, run:
+### 4. Android Setup
 
-```sh
-bundle exec pod install
+```bash
+npx react-native run-android
 ```
 
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
+---
 
-```sh
-# Using npm
-npm run ios
+## Development Notes
 
-# OR using Yarn
-yarn ios
-```
+- Use `npm run lint` to check code style.
+- Fonts and assets are linked in `react-native.config.js`.
+- Avoid mutation — use immutable updates and functional patterns.
+- Screens are built with educational layout components: `Section`, `Note`, `CodeBlock`, and `List`.
+- `ScreenLayout` wraps all screens in a consistent styled container.
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+---
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+## Learning Screens
 
-## Step 3: Modify your app
+Each screen is designed to teach a key concept:
 
-Now that you have successfully run the app, let's make changes!
+| Screen                | Description                                |
+| --------------------- | ------------------------------------------ |
+| `home.tsx`            | Landing screen linking to all chapters     |
+| `react-basics.tsx`    | JSX, props, children, spread/rest          |
+| `state-isolation.tsx` | State behavior and isolation               |
+| `state-memory.tsx`    | How state persists in memory               |
+| `state-snapshot.tsx`  | Snapshots and stale values                 |
+| `event-handler.tsx`   | Stopping propagation, synthetic events     |
+| `use-effect.tsx`      | Side effects and cleanup                   |
+| `use-memo.tsx`        | Memoization, caching, re-rendering         |
+| `functional-prog.tsx` | Immutability, pure functions, side effects |
+| `uit.tsx`             | Virtual DOM, render trees, bundling        |
+| `generics.tsx`        | Intro to TypeScript generics               |
+| `eslint-setup.tsx`    | How ESLint is used in the project          |
+| `prettier-setup.tsx`  | Format rules and setup guide               |
+| `husky-setup.tsx`     | Pre-commit Git hooks using Husky           |
+| `project-setup.tsx`   | RN CLI vs Expo, config notes               |
 
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
+---
 
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
+## Feedback
 
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
+Open an issue or submit a pull request for improvements, ideas, or corrections.
+This is a personal learning project — feedback is welcome!
 
-## Congratulations! :tada:
+---
 
-You've successfully run and modified your React Native App. :partying_face:
+## License
 
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
-=======
-# rn-foundations-by-shoug
->>>>>>> ab82885dbe69ecd38798fd3315e0a4a3a503b691
+MIT License © 2025 [Shoug Alharbi](https://github.com/shougalharbi)
