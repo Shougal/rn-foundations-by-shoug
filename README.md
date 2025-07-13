@@ -2,12 +2,6 @@
 
 ```md
 # RN Foundations by Shoug
-
-[![React Native](https://img.shields.io/badge/React%20Native-2025-blue.svg?logo=react)](https://reactnative.dev/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-4.x-blue.svg?logo=typescript)](https://www.typescriptlang.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](#license)
-[![Status](https://img.shields.io/badge/status-active-brightgreen)](#)
-
 > A foundational React Native learning app focused on mastering components, props, state, functional programming, UI behavior, and clean architecture.  
 > Built by [@shougalharbi](https://github.com/shougalharbi) to reinforce React Native best practices.
 
@@ -21,7 +15,6 @@
 - [Development Notes](#-development-notes)
 - [Learning Screens](#-learning-screens)
 - [Feedback](#-feedback)
-- [License](#-license)
 
 ---
 
@@ -116,7 +109,3 @@ Open an issue or submit a pull request for improvements, ideas, or corrections.
 This is a personal learning project — feedback is welcome!
 
 ---
-
-## License
-
-MIT License © 2025 [Shoug Alharbi](https://github.com/shougalharbi)
