@@ -10,7 +10,7 @@ export const StateAsSnapshotScreen = () => {
   return (
     <ChapterScreenLayout>
       {/* Section 1: State as a Snapshot */}
-      <Section title="Chapter 11: State as a Snapshot">
+      <Section title="Chapter 11: State as a Snapshot" color="#3AB79B">
         <Note
           variant="info"
           content="React state variables are snapshots — they hold the value as it was during that render. Updating them does not mutate the current state directly."
@@ -35,7 +35,7 @@ function handleClick() {
       </Section>
 
       {/* Section 3: Functional Updates */}
-      <Section title="11.2 Fix with Functional Updates">
+      <Section title="11.2 Fix with Functional Updates" color="#3AB79B">
         <Note
           variant="success"
           content="To update based on the latest value, use the functional form of `setState`."
@@ -68,7 +68,7 @@ function handleClick() {
       </Section>
 
       {/* Section 5: Summary */}
-      <Section title="11.4 Summary">
+      <Section title="11.4 Summary" color="#3AB79B">
         <List
           variant="unordered"
           items={[

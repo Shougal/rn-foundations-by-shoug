@@ -11,7 +11,7 @@ export const UseMemoScreen = () => {
   return (
     <ChapterScreenLayout>
       {/* Section 1: What is useMemo */}
-      <Section title="Chapter 14: useMemo">
+      <Section title="Chapter 14: useMemo" color="#3AB79B">
         <Note
           variant="info"
           content="useMemo is a React hook that memoizes the result of a computation — it re-runs the function only when its dependencies change."
@@ -41,7 +41,7 @@ export const UseMemoScreen = () => {
       </Section>
 
       {/* Section 3: Real Example */}
-      <Section title="14.2 Real Example: Filtering a Big List">
+      <Section title="14.2 Real Example: Filtering a Big List" color="#3AB79B">
         <CodeBlock
           code={`const filteredItems = useMemo(() => {
   return items.filter(item => item.active);
@@ -71,7 +71,10 @@ export const UseMemoScreen = () => {
       </Section>
 
       {/* Section 5: When You Should NOT Use useMemo */}
-      <Section title="14.4 When to Avoid useMemo (Overuse Warning)">
+      <Section
+        title="14.4 When to Avoid useMemo (Overuse Warning)"
+        color="#3AB79B"
+      >
         <List
           variant="unordered"
           items={[
@@ -108,7 +111,7 @@ const doubled = useMemo(() => value * 2, [value]); // Not worth it`}
       </Section>
 
       {/* Section 7: Performance Measurement Tips */}
-      <Section title="14.6 How to Know if useMemo Is Worth It">
+      <Section title="14.6 How to Know if useMemo Is Worth It" color="#3AB79B">
         <List
           variant="ordered"
           items={[

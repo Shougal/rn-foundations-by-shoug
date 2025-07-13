@@ -11,7 +11,7 @@ export const PrettierScreen = () => {
   return (
     <ChapterScreenLayout>
       {/* Section 1: What is Prettier */}
-      <Section title="Chapter 3: Prettier">
+      <Section title="Chapter 3: Prettier" color="#3AB79B">
         <Note
           variant="info"
           content="Prettier is an opinionated code formatter that ensures consistent code style across your project by automatically formatting your code."
@@ -31,7 +31,7 @@ export const PrettierScreen = () => {
       </Section>
 
       {/* Section 3: Prettier Configuration */}
-      <Section title="3.2 .prettierrc Configuration">
+      <Section title="3.2 .prettierrc Configuration" color="#3AB79B">
         <Note
           variant="info"
           content="You can create a `.prettierrc` file to customize formatting options."
@@ -66,7 +66,7 @@ export const PrettierScreen = () => {
       </Section>
 
       {/* Section 5: Prettier Docs Link */}
-      <Section title="3.4 Documentation">
+      <Section title="3.4 Documentation" color="#3AB79B">
         <Link
           onPress={() => {
             Linking.openURL("https://prettier.io/docs/en/index.html");

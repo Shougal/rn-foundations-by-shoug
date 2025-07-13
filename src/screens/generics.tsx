@@ -11,7 +11,7 @@ export const GenericsScreen = () => {
   return (
     <ChapterScreenLayout>
       {/* Section 1: What are Generics */}
-      <Section title="Chapter 13: TypeScript Generics">
+      <Section title="Chapter 13: TypeScript Generics" color="#3AB79B">
         <Note
           variant="info"
           content="Generics let you write flexible, reusable functions, components, and types that still preserve type safety."
@@ -40,7 +40,7 @@ const b = identity(42); // T is inferred as number`}
       </Section>
 
       {/* Section 3: Why Not Use 'any'? */}
-      <Section title="13.2 Why Generics Are Better than 'any'">
+      <Section title="13.2 Why Generics Are Better than 'any'" color="#3AB79B">
         <List
           variant="unordered"
           items={[
@@ -89,7 +89,10 @@ getProperty(user, "email"); // Error: 'email' is not a key`}
       </Section>
 
       {/* Section 5: Generic Arrow Functions & Default Types */}
-      <Section title="13.4 Arrow Functions & Default Type Parameters">
+      <Section
+        title="13.4 Arrow Functions & Default Type Parameters"
+        color="#3AB79B"
+      >
         <CodeBlock
           code={`const wrapInArray = <T>(value: T): T[] => [value];
 

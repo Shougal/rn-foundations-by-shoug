@@ -10,7 +10,7 @@ export const EventHandlersScreen = () => {
   return (
     <ChapterScreenLayout>
       {/* Section 1: Naming Handlers */}
-      <Section title="Chapter 8: Event Handlers">
+      <Section title="Chapter 8: Event Handlers" color="#3AB79B">
         <Note
           variant="info"
           content="Event handlers in React are functions that respond to user interactions like clicks, form submissions, or typing."
@@ -33,7 +33,7 @@ export const EventHandlersScreen = () => {
       </Section>
 
       {/* Section 3: Inline Arrow Functions */}
-      <Section title="8.2 Inline Arrow Functions">
+      <Section title="8.2 Inline Arrow Functions" color="#3AB79B">
         <Note
           variant="info"
           content="Inline arrow functions are useful when you need to pass arguments or call multiple functions. Avoid excessive inline functions in large lists."
@@ -62,7 +62,7 @@ export const EventHandlersScreen = () => {
       </Section>
 
       {/* Section 5: Common Gotchas */}
-      <Section title="8.4 Common Gotchas">
+      <Section title="8.4 Common Gotchas" color="#3AB79B">
         <List
           variant="unordered"
           items={[

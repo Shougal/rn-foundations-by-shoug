@@ -10,7 +10,7 @@ export const StateAndMemoryScreen = () => {
   return (
     <ChapterScreenLayout>
       {/* Section 1: Local Variables vs useState */}
-      <Section title="Chapter 9: State and Memory in React">
+      <Section title="Chapter 9: State and Memory in React" color="#3AB79B">
         <Note
           variant="info"
           content="In React, local variables are re-initialized on every render. State persists across renders using useState."
@@ -49,7 +49,7 @@ const [count, setCount] = useState(0);`}
       </Section>
 
       {/* Section 3: Re-render vs Runtime vs Refresh */}
-      <Section title="9.2 Re-render vs Runtime vs Refresh">
+      <Section title="9.2 Re-render vs Runtime vs Refresh" color="#3AB79B">
         <List
           variant="unordered"
           items={[
@@ -81,7 +81,7 @@ setUser({ ...user, age: 30 });`}
       </Section>
 
       {/* Section 5: Why React Needs Immutability */}
-      <Section title="9.4 Why React Needs Immutability">
+      <Section title="9.4 Why React Needs Immutability" color="#3AB79B">
         <Note
           variant="info"
           content="React does a shallow comparison to detect changes. If you keep the same object reference, it assumes nothing changed."

@@ -11,7 +11,7 @@ export const ESLintScreen = () => {
   return (
     <ChapterScreenLayout>
       {/* Section 1: What is ESLint */}
-      <Section title="Chapter 2: ESLint">
+      <Section title="Chapter 2: ESLint" color="#3AB79B">
         <Note
           variant="info"
           content="ESLint is a tool that statically analyzes your code to find problems, enforce consistent style, and catch bugs early."
@@ -37,7 +37,7 @@ export const ESLintScreen = () => {
       </Section>
 
       {/* Section 3: ESLint Config Format */}
-      <Section title="2.2 Configuring .eslintrc.js">
+      <Section title="2.2 Configuring .eslintrc.js" color="#3AB79B">
         <Note
           variant="info"
           content="Since your project compiles using CommonJS (default for Metro bundler), your ESLint config should also follow CommonJS format:"
@@ -71,7 +71,7 @@ export const ESLintScreen = () => {
       </Section>
 
       {/* Section 5: Common Issues (e.g. filename) */}
-      <Section title="2.4 Common Issues: Filename Convention">
+      <Section title="2.4 Common Issues: Filename Convention" color="#3AB79B">
         <Note
           variant="warning"
           content="If you get an error like: 'Filename does not match the naming convention', it’s likely due to a rule like `filenames/match-regex`."

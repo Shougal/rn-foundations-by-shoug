@@ -10,7 +10,7 @@ export const ProjectSetup = () => {
   return (
     <ChapterScreenLayout>
       {/* Section 1: Page header and brief description */}
-      <Section title="Project Setup & Best Practices">
+      <Section title="Project Setup & Best Practices" color="#3AB79B">
         <Note
           variant="info"
           content="This chapter covers the essential initial steps to configure a scalable, maintainable React Native project using best practices."
@@ -40,7 +40,7 @@ export const ProjectSetup = () => {
       </Section>
 
       {/* Section 3: Installing CocoaPods */}
-      <Section title="1.2 Installing CocoaPods (iOS only)">
+      <Section title="1.2 Installing CocoaPods (iOS only)" color="#3AB79B">
         <Note
           variant="info"
           content="CocoaPods is required to install native iOS dependencies like fonts, camera access, and gesture handlers."
@@ -111,7 +111,7 @@ export const ProjectSetup = () => {
       </Section>
 
       {/* Section 5: File structure and jsModules */}
-      <Section title="1.4 File & Folder Structure">
+      <Section title="1.4 File & Folder Structure" color="#3AB79B">
         <Note
           variant="info"
           content="Follow a modular structure with index-based exports for better maintainability."
@@ -150,7 +150,7 @@ export const formatDate = (date: string) => { ... };`}
       </Section>
 
       {/* Section 7: Common JS vs ESM */}
-      <Section title="1.6 CommonJS vs ESM">
+      <Section title="1.6 CommonJS vs ESM" color="#3AB79B">
         <Note
           variant="info"
           content="React Native uses CommonJS under the hood (via Metro), but you always write your code using modern ESM syntax in typescript."

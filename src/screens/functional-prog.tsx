@@ -9,7 +9,10 @@ export const FunctionalProgrammingScreen = () => {
   return (
     <ChapterScreenLayout>
       {/* Section 1: Pure Functions */}
-      <Section title="Chapter 6: Functional Programming in React">
+      <Section
+        title="Chapter 6: Functional Programming in React"
+        color="#3AB79B"
+      >
         <Note
           variant="info"
           content="React components are expected to behave like pure functions — same inputs should always produce the same outputs."
@@ -38,7 +41,7 @@ export const FunctionalProgrammingScreen = () => {
       </Section>
 
       {/* Section 3: Side Effects and useEffect */}
-      <Section title="6.2 Side Effects & useEffect">
+      <Section title="6.2 Side Effects & useEffect" color="#3AB79B">
         <Note
           variant="info"
           content="React renders should be pure. Side effects (e.g., logging, API calls, event listeners) must not happen during render."
@@ -72,7 +75,7 @@ export const FunctionalProgrammingScreen = () => {
       </Section>
 
       {/* Section 5: Memory vs Risk Tradeoffs */}
-      <Section title="6.4 Memory vs Risk Tradeoffs">
+      <Section title="6.4 Memory vs Risk Tradeoffs" color="#3AB79B">
         <Note
           variant="info"
           content="Sometimes, immutability means copying data — which uses more memory but avoids bugs."

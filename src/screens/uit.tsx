@@ -9,7 +9,7 @@ export const UITreeScreen = () => {
   return (
     <ChapterScreenLayout>
       {/* Section 1: UI as a Tree */}
-      <Section title="Chapter 7: UI Tree & Bundling">
+      <Section title="Chapter 7: UI Tree & Bundling" color="#3AB79B">
         <Note
           variant="info"
           content="React models your entire app as a tree of components. This helps React manage rendering, updates, and optimizations efficiently."
@@ -40,7 +40,7 @@ export const UITreeScreen = () => {
       </Section>
 
       {/* Section 3: Module Dependency Tree */}
-      <Section title="7.2 Module Dependency Tree">
+      <Section title="7.2 Module Dependency Tree" color="#3AB79B">
         <Note
           variant="info"
           content="Every time you `import` a file, you create a relationship between modules — this forms a dependency tree."
@@ -75,7 +75,7 @@ export const UITreeScreen = () => {
       </Section>
 
       {/* Section 5: Bundle Size Tips */}
-      <Section title="7.4 Bundle Size Optimization Tips">
+      <Section title="7.4 Bundle Size Optimization Tips" color="#3AB79B">
         <List
           variant="unordered"
           items={[

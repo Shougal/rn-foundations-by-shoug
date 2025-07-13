@@ -13,7 +13,7 @@ const style = StyleSheet.create({
     flexShrink: 1,
     flexWrap: "wrap",
     fontSize: fontSize.sm,
-    color: "#d97706", // amber tone for warning
+    color: "red",
   },
   success: {
     flexShrink: 1,

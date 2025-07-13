@@ -11,7 +11,7 @@ export const HuskyScreen = () => {
   return (
     <ChapterScreenLayout>
       {/* Section 1: What is Husky */}
-      <Section title="Chapter 4: Husky">
+      <Section title="Chapter 4: Husky" color="#3AB79B">
         <Note
           variant="info"
           content="Husky is a tool that lets you run scripts at specific Git lifecycle events, such as before a commit or push."
@@ -41,7 +41,7 @@ export const HuskyScreen = () => {
       </Section>
 
       {/* Section 3: lint-staged */}
-      <Section title="4.2 Using lint-staged with Husky">
+      <Section title="4.2 Using lint-staged with Husky" color="#3AB79B">
         <Note
           variant="info"
           content="lint-staged runs linters or formatters only on files staged for commit — keeping your commits clean and fast."
@@ -80,7 +80,7 @@ export const HuskyScreen = () => {
       </Section>
 
       {/* Docs Link */}
-      <Section title="4.4 Documentation">
+      <Section title="4.4 Documentation" color="#3AB79B">
         <Link
           onPress={() => {
             Linking.openURL("https://typicode.github.io/husky/#/");

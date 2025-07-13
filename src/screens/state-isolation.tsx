@@ -10,7 +10,7 @@ export const StateIsolationScreen = () => {
   return (
     <ChapterScreenLayout>
       {/* Section 1: What is State Isolation */}
-      <Section title="Chapter 10: State Isolation in React">
+      <Section title="Chapter 10: State Isolation in React" color="#3AB79B">
         <Note
           variant="info"
           content="State isolation means each component has its own private state that doesn’t interfere with others. This avoids bugs caused by shared references."
@@ -41,7 +41,10 @@ console.log(originalList[0].seen); // true (mutation happened)`}
       </Section>
 
       {/* Section 3: Deep Object Copy via map + spread */}
-      <Section title="10.2 Full Object Isolation via .map and {...}">
+      <Section
+        title="10.2 Full Object Isolation via .map and {...}"
+        color="#3AB79B"
+      >
         <Note
           variant="success"
           content="Use .map + object spread to shallow copy each object inside the array—this creates separate references for each object."
@@ -69,7 +72,10 @@ const [yourList, setYourList] = useState(initialList);
       </Section>
 
       {/* Section 5: Fix with map for Full Isolation */}
-      <Section title="10.4 Fix: Fully Isolate Initial State with .map">
+      <Section
+        title="10.4 Fix: Fully Isolate Initial State with .map"
+        color="#3AB79B"
+      >
         <List
           variant="ordered"
           items={[
@@ -98,7 +104,7 @@ const [yourList, setYourList] = useState(initialList);
       </Section>
 
       {/* Section 6.1: Pitfalls with Nested Objects */}
-      <Section title="10.5.1 Nested Object Pitfalls">
+      <Section title="10.5.1 Nested Object Pitfalls" color="#3AB79B">
         <Note
           variant="warning"
           content="Spreading an object with nested properties only copies the outer level. Nested objects still reference the original memory."

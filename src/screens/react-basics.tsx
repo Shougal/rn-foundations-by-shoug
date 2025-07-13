@@ -9,7 +9,7 @@ export const ReactBasicsScreen = () => {
   return (
     <ChapterScreenLayout>
       {/* Section 1: JSX syntax rules */}
-      <Section title="Chapter 5: React & JSX Basics">
+      <Section title="Chapter 5: React & JSX Basics" color="#3AB79B">
         <Note
           variant="info"
           content="JSX allows you to write HTML-like syntax directly inside JavaScript. React compiles this into `React.createElement()` calls."
@@ -39,7 +39,7 @@ export const ReactBasicsScreen = () => {
       </Section>
 
       {/* Section 3: Rendering components and using props */}
-      <Section title="5.2 Rendering Components with Props">
+      <Section title="5.2 Rendering Components with Props" color="#3AB79B">
         <Note
           variant="info"
           content="Props are arguments passed into components. Think of them like function parameters."
@@ -61,7 +61,7 @@ export const ReactBasicsScreen = () => {
       </Section>
 
       {/* Section 5: Spread props */}
-      <Section title="5.4 Spread Props (`...props`)">
+      <Section title="5.4 Spread Props (`...props`)" color="#3AB79B">
         <Note
           variant="info"
           content="Use the spread operator when passing multiple props from a parent to a child without manually listing them all."
@@ -83,7 +83,7 @@ export const ReactBasicsScreen = () => {
       </Section>
 
       {/* Section 7: State vs Props vs Context */}
-      <Section title="5.6 State vs Props vs Context">
+      <Section title="5.6 State vs Props vs Context" color="#3AB79B">
         <Note
           variant="info"
           content="React components read data from three primary sources: props, state, and context."
@@ -104,7 +104,7 @@ export const ReactBasicsScreen = () => {
           content="Props are like function parameters — passed down, not owned. State is like internal memory — owned and updated by the component."
         />
 
-        <Section title="When to use state">
+        <Section title="When to use state" color="#3AB79B">
           <List
             variant="unordered"
             items={[
@@ -118,7 +118,10 @@ export const ReactBasicsScreen = () => {
           />
         </Section>
 
-        <Section title="Why not use global variables or mutate state directly?">
+        <Section
+          title="Why not use global variables or mutate state directly?"
+          color="#3AB79B"
+        >
           <List
             variant="unordered"
             items={[

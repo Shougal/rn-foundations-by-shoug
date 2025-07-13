@@ -11,7 +11,7 @@ export const UseEffectScreen = () => {
   return (
     <ChapterScreenLayout>
       {/* Section 1: What is useEffect */}
-      <Section title="Chapter 12: useEffect and Cleanup">
+      <Section title="Chapter 12: useEffect and Cleanup" color="#3AB79B">
         <Note
           variant="info"
           content="useEffect is a React hook used to run side effects in function components, like data fetching, event listeners, or timers."
@@ -40,7 +40,10 @@ export const UseEffectScreen = () => {
 
       {/* Section 3: Global Side Effects and Cleanup */}
 
-      <Section title="12.2 Global Side Effects (e.g., window, setInterval)">
+      <Section
+        title="12.2 Global Side Effects (e.g., window, setInterval)"
+        color="#3AB79B"
+      >
         <Note
           variant="info"
           content="When you attach global listeners (like window resize) or create intervals, you must remove them manually to prevent memory leaks and unexpected behavior."
@@ -78,7 +81,7 @@ window.addEventListener("scroll", someHandler);`}
       </Section>
 
       {/* Section 5: Performance Risks */}
-      <Section title="12.4 Performance and Bug Risks">
+      <Section title="12.4 Performance and Bug Risks" color="#3AB79B">
         <List
           variant="unordered"
           items={[

@@ -7,7 +7,7 @@ import { ChapterScreenLayout } from "../components/ScreenLayout";
 export const HomeScreen = () => {
   return (
     <ChapterScreenLayout>
-      <Section title="Welcome to RN Foundations">
+      <Section title="Welcome to RN Foundations" color="#3AB79B">
         <Note
           variant="info"
           content="This app is your hands-on companion for learning React Native fundamentals in a structured, visual, and practical way."
