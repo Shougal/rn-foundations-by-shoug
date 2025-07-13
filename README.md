@@ -16,7 +16,6 @@
 ## Table of Contents
 
 - [Features](#-features)
-- [Folder Structure](#-folder-structure)
 - [Tech Stack](#️-tech-stack)
 - [Getting Started](#-getting-started)
 - [Development Notes](#-development-notes)
@@ -37,43 +36,7 @@
 
 ---
 
-## Folder Structure
-```
-
-src/
-├── components/ # Reusable UI components
-│ ├── CodeBlock/
-│ ├── Link/
-│ ├── List/
-│ ├── Note/
-│ ├── ScreenLayout/
-│ └── Section/
-├── navigation/ # Navigation configuration (if added)
-├── screens/ # Learning modules as screens
-│ ├── eslint-setup.tsx
-│ ├── event-handler.tsx
-│ ├── functional-prog.tsx
-│ ├── generics.tsx
-│ ├── home.tsx
-│ ├── husky-setup.tsx
-│ ├── prettier-setup.tsx
-│ ├── project-setup.tsx
-│ ├── react-basics.tsx
-│ ├── state-isolation.tsx
-│ ├── state-memory.tsx
-│ ├── state-snapshot.tsx
-│ ├── uit.tsx
-│ ├── use-effect.tsx
-│ └── use-memo.tsx
-├── styles/ # Theme, colors, spacing
-├── App.tsx
-└── README.md
-
-````
-
----
-
-## 🛠️ Tech Stack
+## Tech Stack
 
 - React Native (CLI)
 - TypeScript
