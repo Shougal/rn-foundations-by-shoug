@@ -8,7 +8,7 @@ export const style = StyleSheet.create({
   },
   code: {
     fontFamily: "Courier",
-    backgroundColor: "#63627C",
+    backgroundColor: "#2A4F63",
     padding: 12,
     borderRadius: 6,
   },

@@ -21,11 +21,12 @@ export const BottomTabNavigator = () => {
     <Tab.Navigator
       screenOptions={{
         headerStyle: {
-          backgroundColor: "#DBDAEE",
+          backgroundColor: "#2A4F63",
         },
         headerTitleAlign: "center",
         headerTitleStyle: {
           fontWeight: "bold",
+          color: "#FFFFFF",
         },
       }}
     >

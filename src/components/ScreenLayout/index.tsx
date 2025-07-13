@@ -12,8 +12,8 @@ export const ChapterScreenLayout = ({
   return (
     <SafeAreaView style={pageStyle.pageContainer}>
       <LinearGradient
-        colors={["#DBDAEE", "#7D7D88"]}
-        locations={[0.5, 1]}
+        colors={["#D1D9DE", "#749EB8"]}
+        locations={[0.1, 1]}
         start={{ x: 0, y: 0 }}
         end={{ x: 1, y: 0 }}
       >
